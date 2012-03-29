@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Vin:</b>
+  <%= @vehicle.vin %>
+</p>
+
+<p>
+  <b>Make:</b>
+  <%= @vehicle.make %>
+</p>
+
+<p>
+  <b>Model:</b>
+  <%= @vehicle.model %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @vehicle.year %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @vehicle.color %>
+</p>
+
+
+<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+<%= link_to 'Back', vehicles_path %>

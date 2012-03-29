@@ -1,0 +1,41 @@
+<h1>All vehicles</h1>
+
+<script id="vehicle-template" type="text/x-handlebars-template">
+  <h2><a id="{{id}}" class="vehicle-edit-link">{{make}}</a></h2>
+  <p>{{model}} {{year}} {{color}}</p>
+  <a id="{{id}}" class="vehicle-delete-link">Delete</a>
+</script>
+
+<div id="vehicles" class="half-width">
+</div>
+
+<div id="edit-vehicles" class="half-width">
+
+</div>
+
+<div class="clear"> </div>
+
+<script id="vehicle-edit-template" type="text/x-handlebars-template">
+  <h2>{{action}} Vehicle</h2>
+
+  <form id="vehicle-form">
+    <p>
+      Make <input type="text" id="make" value="{{make}}"/>
+    </p>
+    <p>
+      Model <input type="text" id="model" value="{{model}}"/>
+    </p>
+    <p>
+      Year <input type="text" id="year" value="{{year}}"/>
+    </p>
+    <p>
+      Color <input type="text" id="color" value="{{color}}"/>
+    </p>
+    <button type="submit" id="save-vehicle">Save</button>
+  </form>
+</div>
+</script>
+
+<div id="links">
+  <%= link_to 'New Vehicle', '#', id: 'new-vehicle' %>
+</div>
